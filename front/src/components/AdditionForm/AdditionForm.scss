@@ -1,0 +1,27 @@
+.addition-form {
+  display: flex;
+  padding: 20px;
+
+  .addition-input {
+    all: unset;
+    padding: 5px;
+    background-color: var(--secondary);
+    box-shadow: inset 0 0 0 1px var(--accent);
+    border-radius: 5px 0 0 5px;
+  }
+
+  .addition-button {
+    all: unset;
+    cursor: pointer;
+    padding: 5px;
+    background-color: var(--secondary);
+    box-shadow: inset 0 0 0 1px var(--accent);
+    border-radius: 0 5px 5px 0;
+
+    transition: background-color .25s;
+
+    &:hover {
+      background-color: var(--primary);
+    }
+  }
+}

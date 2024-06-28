@@ -1,0 +1,57 @@
+.task {
+  min-width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 10px;
+  border: 2px solid var(--primary);
+  border-radius: 5px;
+
+  .check-container {
+    display: flex;
+    gap: 5px;
+
+    .checkbox:checked + .task-text {
+      text-decoration: line-through;
+    }
+
+    .task-text {
+      font-size: 1.25rem;
+    }
+  }
+
+  .buttons {
+    display: flex;
+
+    button {
+      all: unset;
+    }
+
+    .delete-button, .order-buttons .order-button {
+      font-weight: bold;
+      cursor: pointer;
+      padding: 5px;
+
+      transition: color .25s;
+    }
+
+    .delete-button {
+      color: rgb(141, 71, 71);
+      &:hover {
+        color: red;
+      }
+    }
+
+    .order-buttons {
+      display: flex;
+      flex-direction: column;
+
+      .order-button {
+        color: rgb(71, 125, 141);
+        &:hover {
+          color: rgb(0, 225, 255);
+        }
+      }
+    }
+  }
+}
